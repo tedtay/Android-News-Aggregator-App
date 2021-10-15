@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+    <item
+        android:id="@+id/home"
+        android:icon = "@drawable/backhome"
+        app:showAsAction="ifRoom"
+        android:title="@string/toolbarHome">
+    </item>
+    <item
+        android:id="@+id/account"
+        android:icon = "@drawable/account_icon"
+        app:showAsAction="ifRoom"
+        android:title="@string/toolbarAccount">
+    </item>
+    <item
+        android:id="@+id/stocks"
+        android:icon = "@drawable/top_picks3"
+        app:showAsAction="ifRoom"
+        android:title="@string/toolbarStocks"
+        android:background = "@color/colorPrimary">
+    </item>
+    <item
+        android:id="@+id/topPicks"
+        android:icon = "@drawable/top_picks3"
+        app:showAsAction="ifRoom"
+        android:title="@string/toolbarTopPicks"
+        android:background = "@color/colorPrimary">
+    </item>
+
+
+</menu>

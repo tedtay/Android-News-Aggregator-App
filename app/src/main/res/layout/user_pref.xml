@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserPref"
+    android:background="?colorPrimaryDark"
+    android:id="@+id/userPrefLayout">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id ="@+id/account_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:titleTextColor = "@android:color/white"
+        android:background = "@color/colorPrimary"
+        >
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@android:color/white"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id = "@+id/interestsCard"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+
+            <CheckBox
+                android:id="@+id/checkbox_GENERAL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="@id/interestsCard"
+                app:layout_constraintTop_toTopOf="@id/interestsCard"
+                android:text="@string/generalCheckbox"
+                android:textSize= "30dp"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/checkbox_SPORTS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/checkbox_GENERAL"
+                app:layout_constraintLeft_toLeftOf="@id/interestsCard"
+                android:text="@string/sportsCheckbox"
+                android:textSize= "30dp"
+                android:padding="10dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_BUSINESS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/checkbox_SPORTS"
+                app:layout_constraintLeft_toLeftOf="@id/interestsCard"
+                android:text="@string/businessCheckbox"
+                android:textSize= "30dp"
+                android:padding="10dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_ENTERTAINMENT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/checkbox_BUSINESS"
+                app:layout_constraintLeft_toLeftOf="@id/interestsCard"
+                android:text="@string/entertainmentCheckbox"
+                android:textSize= "30dp"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/checkbox_HEALTH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/checkbox_ENTERTAINMENT"
+                app:layout_constraintLeft_toLeftOf="@id/interestsCard"
+                android:text="@string/healthCheckbox"
+                android:textSize= "30dp"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/checkbox_SCIENCE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/checkbox_HEALTH"
+                app:layout_constraintLeft_toLeftOf="@id/interestsCard"
+                android:text="@string/scienceCheckbox"
+                android:textSize= "30dp"
+                android:padding="10dp"/>
+            <CheckBox
+                android:id="@+id/checkbox_TECHNOLOGY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/checkbox_SCIENCE"
+                app:layout_constraintLeft_toLeftOf="@id/interestsCard"
+                android:text="@string/technologyCheckbox"
+                android:textSize= "30dp"
+                android:padding="10dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Account"
+    android:background="?colorPrimaryDark">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id ="@+id/accountToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:titleTextColor = "@android:color/white"
+        android:background = "@color/colorPrimary"
+        android:title="@string/homeActionBarTitle"
+        >
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@android:color/white"
+        >
+
+        <Button
+            android:id="@+id/edit_interests_button"
+            android:layout_height="250dp"
+            android:layout_width="fill_parent"
+            android:text="@string/accountEditInterestsButton"
+
+            android:background="@color/colorPrimary"
+            android:onClick="accountPageUserPrefButtonClick"/>
+
+        <Button
+            android:id="@+id/createLoginAccountButton"
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:onClick="accountPageCreateAccountButtonClick"
+            android:text="@string/accountPageCreateAccountLoginButton"
+            app:layout_constraintTop_toBottomOf="@+id/interests_button"
+            android:layout_marginTop="260dp"
+            android:background="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/text_view_id"
+            android:layout_height="50dp"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="550dp"/>
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

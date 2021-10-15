@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="?colorPrimaryDark"
+    android:id="@+id/activityMainLayout">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id ="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:titleTextColor = "@android:color/white"
+        android:background = "@color/colorPrimary"
+        android:title="@string/homeActionBarTitle"
+       >
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:hint="@string/searchEditBox"
+            android:title="@string/searchEditBox"/>
+
+            <Button
+                android:id="@+id/search_button"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/searchButtonText"
+                android:background="@color/colorPrimaryDark"
+                app:layout_constraintLeft_toRightOf="parent"
+                />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id ="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

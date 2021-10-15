@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">News App</string>
+
+    <string name="homeActionBarTitle">News Feed</string>
+    <string name="accountActionBarTitle">Account</string>
+
+    <string name="accountEditInterestsButton">Edit Interests</string>
+    <string name="accountInterestsButton">Interests</string>
+    <string name="accountPageCreateAccountLoginButton">Create Account/ Login</string>
+
+    <string name="createAccountCreateAccount">Create Account</string>
+    <string name="createAccountLogin">Login</string>
+    <string name="createAccountEmail">Email</string>
+    <string name="createAccountPassword">Password</string>
+    <string name="createAccountDarkMode">Toggle Dark Mode</string>
+
+    <string name="currentUser">null</string>
+
+    <string name="generalCheckbox">General</string>
+    <string name="entertainmentCheckbox">Entertainment</string>
+    <string name="sportsCheckbox">Sports</string>
+    <string name="businessCheckbox">Business</string>
+    <string name="healthCheckbox">Health</string>
+    <string name="scienceCheckbox">Science</string>
+    <string name="technologyCheckbox">Technology</string>
+
+    <string name="searchEditBox">Enter Search Term</string>
+    <string name="searchButtonText">Search</string>
+
+    <string name="toolbarHome">Home</string>
+    <string name="toolbarAccount">Account</string>
+    <string name="toolbarTopPicks">Your Top Picks</string>
+    <string name="toolbarStocks">Stocks</string>
+
+
+</resources>
